@@ -5,8 +5,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let input = (() => {
       content = document.querySelector("#human-text").value;
-      return content;
+      processedContent = content.toLowerCase();
+      return processedContent;
     });
+
+    console.log(Array.from(input()));
 
     let testForVowels = vowels.forEach((element) => {
       return element;
@@ -25,6 +28,8 @@ document.addEventListener("DOMContentLoaded", () => {
         };
       });
     });
+
+    console.log(resultArray);
 
     whaleSpeech = resultArray.join("").toUpperCase();
 
