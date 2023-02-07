@@ -11,7 +11,7 @@
 .grid {
     box-sizing: border-box;
     display: grid;
-    grid-template-columns: minmax(2em, 4fr) repeat(12,minmax(auto,1fr))
+    grid-template-columns: minmax(2em, 4fr) repeat(12,minmax(calc(1230px / 12),1fr))
                             minmax(2em, 4fr);
 }
 .grid-content {
@@ -35,12 +35,26 @@
     grid-column: 8 / 14;
 }
 
+nav {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    font-size: 13px;
+    font-weight: 400;
+    height: 64px;
+    justify-content: space-between;
+    line-height: 27px;
+    min-width: 0px;
+    padding: 8px;
+    margin-bottom: 64px;
+}
+
+
 
 .translation-container {
     display: flex;
     grid-row-start: 2;
-    border: 1px solid black;
-    border-radius: 15px 15px 15px 15px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 8px 8px 8px 8px;
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
 }
 .human-container {
     width: 50%;
