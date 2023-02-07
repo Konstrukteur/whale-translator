@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -38,20 +39,57 @@
 .translation-container {
     display: flex;
     grid-row-start: 2;
+    border: 1px solid black;
+    border-radius: 15px 15px 15px 15px;
 }
 .human-container {
-    border: 1px solid black;
     width: 50%;
 }
 .human-container textarea {
     resize: none;
     border: 0;
-    height: 20em;
+    height: 192px;
     width: 100%;
+    padding: 20px;
+
+    font-size: 24px;
+    line-height: 32px;
+}
+.human-container-header {
+    height: 49px;
+    border-radius: 15px 15px 15px 15px;
+    padding: 0 0 0 20px;
+
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    left: 0px;
+    letter-spacing: 0.25px;
+    line-height: 40px;
+}
+.whale-container-header {
+    height: 49px;
+    border-radius: 15px 15px 15px 15px;
+    padding: 0 0 0 20px;
+
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    left: 0px;
+    letter-spacing: 0.25px;
+    line-height: 40px;
 }
 .whale-container {
-    border: 1px solid black;
     width: 50%;
+}
+#whale-text {
+    height: 192px;
+    padding: 20px;
+
+    background-color: rgb(245, 245, 245);
+
+    font-size: 24px;
+    line-height: 32px;
 }
 #translate-button {
     border: 1px solid blue;
