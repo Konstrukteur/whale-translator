@@ -11,7 +11,7 @@
 .grid {
     box-sizing: border-box;
     display: grid;
-    grid-template-columns: minmax(2em, 4fr) repeat(12,minmax(calc(1230px / 12),1fr))
+    grid-template-columns: minmax(2em, 4fr) repeat(12,minmax(auto,1fr))
                             minmax(2em, 4fr);
 }
 .grid-content {
